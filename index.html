@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Finance Dashboard</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/tabler-icons.min.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1 class="page-title">Finance Dashboard</h1>
+
+  <div class="tabs" id="tabs">
+    <button class="tab-btn active-tab" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="cashflow">Cashflow</button>
+    <button class="tab-btn" data-tab="balance">Balance sheet</button>
+    <button class="tab-btn" data-tab="debts">Debts</button>
+    <button class="tab-btn" data-tab="investments">Investments</button>
+  </div>
+
+  <div id="panel-overview" class="panel"></div>
+  <div id="panel-cashflow" class="panel" style="display:none;"></div>
+  <div id="panel-balance" class="panel" style="display:none;"></div>
+  <div id="panel-debts" class="panel" style="display:none;"></div>
+  <div id="panel-investments" class="panel" style="display:none;"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
